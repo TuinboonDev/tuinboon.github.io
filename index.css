@@ -1,0 +1,36 @@
+body {
+    background-color: #3F3F3F;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+#mainframe {
+    background-color: #292929;
+    padding-top: 25px;
+    width: 500px;
+    height: 200px;
+    border-radius: 12px;
+}
+
+#mainframe h1 {
+    font-family: Montserrat;
+    display: inline-block;
+    color: white;
+}
+
+#wave {
+    animation: rotate 0.4s 4;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(80deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
