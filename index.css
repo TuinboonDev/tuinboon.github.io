@@ -19,7 +19,7 @@ body {
 }
 
 #wave {
-    animation: rotate 0.4s 4;
+    animation: rotate 0.4s 20;
 }
 
 @keyframes rotate {
