@@ -1,3 +1,7 @@
+#WIP {
+  text-align: center;
+}
+
 body {
     background-color: #121212;
     display: grid;
@@ -12,7 +16,6 @@ body {
     height: 70%;
     border-radius: 12px;
     margin-top: 1%;
-    
     position: relative;
 }
 
