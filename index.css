@@ -1,7 +1,3 @@
-#WIP {
-  text-align: center;
-}
-
 body {
     background-color: #121212;
     display: grid;
@@ -19,6 +15,9 @@ body {
     position: relative;
 }
 
+#WIP {
+  text-align: center;
+}
 
 #githublogo svg {
   width: 50px;
