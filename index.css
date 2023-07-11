@@ -35,10 +35,20 @@ body {
   transform: scale(1.2);
 }
 
-#mainframe h1 {
+li{
+  height: 50px;
+  
+}
+#mainframe h1{
     font-family: Montserrat;
     display: inline-block;
     color: white;
+}
+
+#mainframe h2 {
+  font-family: Montserrat;
+  display: inline-block;
+  color: white;
 }
 
 #top {

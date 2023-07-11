@@ -21,7 +21,13 @@ body {
     position: relative;
 }
 
-
+#arrowback {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  }
 
 .label {
     position: absolute;
