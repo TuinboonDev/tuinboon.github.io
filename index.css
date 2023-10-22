@@ -96,3 +96,14 @@ a {
     transform: rotate(0deg);
   }
 }
+
+
+@media (max-width: 950px) {
+  #mainframe {
+    word-wrap: break-word;
+  }
+  #brk::after {
+    content:"\a";
+    white-space: pre;
+  }
+}

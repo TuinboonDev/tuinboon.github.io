@@ -10,7 +10,27 @@ function discord() {
     window.open("https://discord.com/users/584748051814547487")
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Retrieve the current visit count from local storage
+    let count = localStorage.getItem('visitCount');
+
+    // Check if a visit count exists in local storage
+    if (count) {
+      count = parseInt(count) + 1; // Increment the visit count
+    } else {
+      count = 1; // Set the initial visit count to 1
+    }
+
+    // Update the visit count in local storage
+    localStorage.setItem('visitCount', count);
+
+    // Display the visit count on the webpage
+    document.getElementById('counter').textContent = count;
+  });
+
 window.onload = function () {
+
+    
     var index = 0;
     var delay = 150;
     var text;
