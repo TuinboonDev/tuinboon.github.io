@@ -48,8 +48,7 @@
 
 
         @media screen and (max-width: 600px) {
-            /* Adjust breakpoint as needed */
-            body {
+            #body {
                 flex-direction: column;
                 justify-content: center;
             }
@@ -59,16 +58,16 @@
         }
         @media screen and (min-width: 600px) {
             /* Adjust breakpoint as needed */
-            body {
+            #body {
                 font-size: calc(5vw );
             }
             
         }
     </style>
 </head>
-<body class="bodylight">
-    <img src="cat.png" id="img">
+<body id="body" class="bodylight">
     <img src="sun.png" id="icon" class="iconlight" onclick="changeMode()">
+    <img src="cat.png" id="img">
     <h1 id="text">Under <br>Construction</h1>
     <script>
         var toggle = false;
