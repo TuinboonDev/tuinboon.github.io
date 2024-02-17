@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="meow.png">
     <meta name="og:image" content="https://thijmens.nl/cat.png">
     <style>
-        body {
+        .bodylight {
             font-family: 'Poppins';
             font-size: 5vw;
             display: flex;
@@ -20,6 +20,32 @@
         #img {
             width:35%;
         }
+        .iconlight {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 32px;
+        }
+
+        .bodydark {
+            font-family: 'Poppins';
+            font-size: 5vw;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: black;
+        }
+        .icondark {
+            content: url("sunlight.png");
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 32px;
+        }
+
 
         @media screen and (max-width: 600px) {
             /* Adjust breakpoint as needed */
@@ -40,8 +66,25 @@
         }
     </style>
 </head>
-<body>
+<body class="bodylight">
     <img src="cat.png" id="img">
+    <img src="sun.png" id="icon" class="iconlight" onclick="changeMode()">
     <h1 id="text">Under <br>Construction</h1>
+    <script>
+        var toggle = false;
+        function changeMode() {
+            var body = document.body;
+            var icon = document.getElementById("icon");
+            if (!toggle) { 
+                body.className = "bodydark"
+                icon.className = "icondark"
+                toggle = !toggle
+            } else {
+                body.className = "bodylight"
+                icon.className = "iconlight"
+                toggle = !toggle
+            }
+        }
+    </script>
 </body>
 </html>
